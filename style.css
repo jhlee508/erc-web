@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  padding: 0 15vw;
+  /* padding: 0 15vw; */
   margin:0 0;
   overflow-x: hidden;
   -webkit-fontsmoothing: antialiased;
@@ -196,14 +196,14 @@ li::marker {
   width: 100%;
   border-top: 1px solid #888da059;
   margin: 0px 20px 0px 20px;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 0px 10px 0px;
   font-size: 1.2rem;
   color: #888da059;
 }
 
 @media screen and (max-width: 768px) {
   .contents {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   #diagram-img {
     width: 36vmax;
@@ -211,6 +211,21 @@ li::marker {
   }
   .footer {
     font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 288px) {
+  .contents {
+    font-size: 0.7rem;
+  }
+  #main-title {
+    font-size: 1.8em;
+  }
+  #diagram-img {
+    width: 36vmax;
+    margin-bottom: 26vmin;
+  }
+  .footer {
+    font-size: 0.6rem;
   }
 }
 
