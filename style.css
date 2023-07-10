@@ -34,6 +34,17 @@ body {
   );
 }
 
+@font-face {
+  font-family: 'KorailRoundGothicBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KorailRoundGothicBold.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+.nanumgothic * {
+ font-family: 'Nanum Gothic', sans-serif;
+}
+
 .container {
   width: 80%;
   display: flex;
@@ -42,6 +53,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   padding-top: 10vmin;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 .top-block {
@@ -63,18 +75,21 @@ body {
 }
 #sub-title1 {
   font-size: 1em; /*em으로 하면 부모 요소의 사이즈 기준으로 됨 (즉 top-block의 fontsize 기준)*/
-  color: #838eb4;
-  margin-bottom: 0.2em;
+  color: #cdcdcd;
+  margin-bottom: 0.3em;
+  font-family: 'KorailRoundGothicBold';
 }
 #main-title {
   font-size: 2em;
-  color: #bfd2ff;
-  margin-bottom: 0.2em;
+  color: #cdcdcd;
+  margin-bottom: 0.3em;
+  font-family: 'KorailRoundGothicBold';
 }
 #sub-title2 {
   font-size: 1em;
   font-weight: 300;
-  color: #838eb4;
+  color: #cdcdcd;
+  font-family: 'KorailRoundGothicBold';
 }
 
 #top-img {
@@ -119,7 +134,7 @@ body {
   position: relative;
   font-size: 1.5rem;
   padding: 4.8vw 0px;
-  color: #bfd2ff;
+  color: #cdcdcd;
   text-align: left;
   word-break: keep-all;
 }
@@ -144,7 +159,7 @@ a.nav-button:link {
 
 a.enabled {
   text-decoration: none;
-  color: #bfd2ff;
+  color: #cdcdcd;
 }
 a.enabled:hover {
   color: white;
@@ -153,7 +168,7 @@ a.disabled {
   pointer-events: none;
   cursor: default;
   text-decoration: underline;
-  color: #bfd2ff;
+  color: #cdcdcd;
 }
 
 ul,
